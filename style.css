@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: hsl(30, 54%, 90%);
+    display: grid;
+    place-items: center;
+}
+
+.wrapper {
+    background-color: white;
+    border-radius: 20px;
+    width: 720px;
+    margin: 3rem 0;
+    padding: 2rem;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+}
+
+.wrapper h1 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: hsl(24, 5%, 18%);
+    margin-bottom: 1rem;
+}
+
+.main-title p {
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.prep-time {
+    font-family: "Outfit", sans-serif;
+    background-color:  hsl(330, 100%, 98%);
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.prep-time h3 {
+    margin-bottom: 0.5rem;
+    color: hsl(332, 51%, 32%)
+}
+
+.prep-time li {
+    margin-left: 2rem;
+    line-height: 2;
+    color: hsl(24, 5%, 18%);
+    padding-left: 10px;
+}
+
+.prep-time li::marker {
+    margin-right: 0.5rem;
+    color: hsl(332, 51%, 32%);
+    font-size: 0.75rem;
+    
+}
+
+.ingre-list, .instr-list {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid hsl(24, 5%, 18%);
+    margin-bottom: 1rem;
+}
+
+.ingre-list h2, .instr-list h2, .nutr-list h2 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: hsl(14, 45%, 36%);
+}
+
+.ingre-list li {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    margin-left: 1rem;
+    line-height: 2;
+    padding-left: 16px;
+}
+
+.ingre-list li::marker {
+    margin-right: 0.5rem;
+    color: hsl(14, 45%, 36%);
+    font-size: 0.75rem;
+}
+
+.instr-list ol {
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+    list-style-position: outside;
+    margin-left: 1rem;
+}
+
+.instr-list li {
+    color:hsl(24, 5%, 18%);
+    line-height: 1.75;
+    padding-left: 1rem;
+}
+
+ .instr-list li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+    font-family: "Outfit", sans-serif;
+ }
+
+ .nutr-list p, table {
+    border-collapse: collapse;
+    font-family: "Outfit", sans-serif;
+    font-weight: 400;
+ }
+
+ .nutr-list p {
+    margin-bottom: 1rem;
+ }
+
+ .nutr-list table tbody tr td {
+    border-bottom: 1px solid hsl(24, 5%, 18%);
+    width: 100%;
+    padding: 0.5rem;
+ }
+ 
+ .nutr-list table tbody tr td strong {
+    color: hsl(14, 45%, 36%);
+    margin-right: 17rem;
+ }
+
+ @media (max-width: 720px) {
+
+    .wrapper {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+    }
+    
+    .wrapper img {
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .wrapper h1, .main-title p, .ingre-list h2, .instr-list h2, .nutr-list h2, .nutr-list p {
+        padding-left: 2rem;
+    }
+
+    .prep-time {
+        width: 95%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .ingre-list, .instr-list {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .ingre-list h2, .instr-list h2 {
+        margin-left: -1rem;
+    }
+
+    .nutr-list table {
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+
+    .nutr-list table tbody tr td strong {
+        margin-left: 10rem;
+    }
+
+ }
